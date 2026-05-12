@@ -216,6 +216,16 @@ Thumbs.db
 # ===== 编译产物 =====
 rust-vexus-lite/target/
 
+# .NET 编译产物
+**/bin/Debug/
+**/obj/Debug/
+**/bin/Release/
+**/obj/Release/
+*.exe
+
+# Rust 编译产物备份
+rust-vexus-lite/*.node.bak
+
 # ==== 分布式开发 ====
 VCPDistributedServer
 # XiaohongshuFetch config
@@ -225,3 +235,29 @@ Plugin/XiaohongshuFetch/config.env
 pluginStoreSources.json
 tmp/
 Plugin/.backup/
+
+# ===== 运行时数据 / 状态文件 =====
+# 异步任务结果
+VCPAsyncResults/
+
+# 定时联系人数据
+VCPTimedContacts/
+!VCPTimedContacts/config.env.example
+
+# Agent 委托任务输出
+file/document/AgentTask/
+
+# 插件运行时数据
+Plugin/VCPTavern/access_logs.json
+Plugin/AgentAssistant/agent_scores.json
+Plugin/AgentAssistant/AgentAssistantConfig.json
+Plugin/RiverTestPlugin/river/
+Plugin/FlashDeepSearch/log/
+Plugin/PaperReader/workspace/
+Plugin/FileOperator/path/
+Plugin/ScheduleManager/schedules.json
+Plugin/VCPTaskAssistant/task-center-data.json
+
+# 截图和计划文件
+screenshots/
+plans/
